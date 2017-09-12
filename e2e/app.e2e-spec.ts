@@ -1,7 +1,6 @@
 import { AppPage } from './app.po';
-import { protractor } from 'protractor/built/ptor';
 
-describe('demo App', () => {
+describe('homework02 App', () => {
   let page: AppPage;
 
   beforeEach(() => {
@@ -10,7 +9,6 @@ describe('demo App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('homework02 works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });
-
