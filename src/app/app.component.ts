@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  value = '';
+  value = '0';
 
   onChange(element: HTMLSelectElement) {
     this.value = element.value;
