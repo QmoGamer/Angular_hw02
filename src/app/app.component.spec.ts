@@ -43,7 +43,11 @@ describe('AppComponent', () => {
 
   describe('Unit Test', () => {
     it('onChange() should change value', () => {
-      target.onChange(1);
+      const stub = <HTMLSelectElement>{
+        'value': '1'
+      };
+
+      target.onChange(stub);
       expect(target.value).toBe('1');
     })
   })    
