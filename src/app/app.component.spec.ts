@@ -40,4 +40,11 @@ describe('AppComponent', () => {
       expect(htmlElement.textContent).toBe('');
     })
   })
+
+  describe('Unit Test', () => {
+    it('onChange() should change value', () => {
+      target.onChange(1);
+      expect(target.value).toBe('1');
+    })
+  })    
 });
